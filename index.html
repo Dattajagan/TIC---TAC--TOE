@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-shell">
+        <header class="hero">
+            <div class="hero-copy">
+                <span class="eyebrow">Classic Game</span>
+                <h1>Tic Tac Toe</h1>
+                <p>Play against a friend with polished animations, score tracking, and winner highlights.</p>
+            </div>
+            <div class="status-panel">
+                <div class="scoreboard">
+                    <div>
+                        <span class="score-label">X</span>
+                        <strong id="scoreX">0</strong>
+                    </div>
+                    <div>
+                        <span class="score-label">Draws</span>
+                        <strong id="scoreDraw">0</strong>
+                    </div>
+                    <div>
+                        <span class="score-label">O</span>
+                        <strong id="scoreO">0</strong>
+                    </div>
+                </div>
+                <div class="game-info">
+                    <div class="mode-select">
+                        <label for="mode">Mode:</label>
+                        <select id="mode" aria-label="Select game mode">
+                            <option value="two">Two Players</option>
+                            <option value="single">Single Player (vs CPU)</option>
+                        </select>
+                    </div>
+                    <p id="message">Ready to play? X starts.</p>
+                    <button id="reset">New Game</button>
+                </div>
+            </div>
+        </header>
+
+        <main class="game-shell">
+            <div class="board" role="grid" aria-label="Tic Tac Toe board">
+                <button class="cell" data-index="0" aria-label="Cell 1"></button>
+                <button class="cell" data-index="1" aria-label="Cell 2"></button>
+                <button class="cell" data-index="2" aria-label="Cell 3"></button>
+                <button class="cell" data-index="3" aria-label="Cell 4"></button>
+                <button class="cell" data-index="4" aria-label="Cell 5"></button>
+                <button class="cell" data-index="5" aria-label="Cell 6"></button>
+                <button class="cell" data-index="6" aria-label="Cell 7"></button>
+                <button class="cell" data-index="7" aria-label="Cell 8"></button>
+                <button class="cell" data-index="8" aria-label="Cell 9"></button>
+            </div>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
